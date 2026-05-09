@@ -34,8 +34,14 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 0.5rem 1rem;
+    padding: 0;
     height: 60px;
+  }
+  .navbar-container {
+    padding: 0 0.75rem;
+  }
+  .nav-right {
+    gap: 0.5rem;
   }
 }
 
@@ -266,15 +272,14 @@
   color: #1e293b !important;
   text-decoration: none !important;
   cursor: pointer !important;
-  padding: 0.4rem 0 !important;
-  transition: all 0.2s ease !important;
+  padding: 0.8rem 1rem !important;
+  transition: all 0.3s ease !important;
   display: block !important;
+  border-radius: 12px !important;
 }
 
 .mobile-nav-list a:hover, 
-.mobile-nav-list a:active,
-.mobile-nav-list a:focus,
 .mobile-nav-list a.active {
   color: #ff5722 !important;
-  padding-left: 0.5rem !important;
+  background: #f3f4f6 !important;
 }
