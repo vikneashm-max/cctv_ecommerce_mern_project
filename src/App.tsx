@@ -164,7 +164,6 @@ function App() {
         )}
         {view === 'products' && (
           <ProductsPage 
-            onNavigate={navigateTo} 
             addToCart={addToCart} 
             toggleFavorite={toggleFavorite}
             buyNow={buyNow}
@@ -177,21 +176,19 @@ function App() {
         )}
         {view === 'cart' && (
           <CartPage 
-            onNavigate={navigateTo} 
             cartItems={cart} 
             removeFromCart={removeFromCart} 
           />
         )}
         {view === 'favorites' && (
           <FavoritesPage 
-            onNavigate={navigateTo} 
             favorites={favorites} 
             toggleFavorite={toggleFavorite}
             addToCart={addToCart}
           />
         )}
         {view === 'contact' && (
-          <ContactPage onNavigate={navigateTo} />
+          <ContactPage />
         )}
       </main>
     </div>

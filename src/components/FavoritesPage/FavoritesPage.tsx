@@ -11,13 +11,12 @@ interface Product {
 }
 
 interface FavoritesPageProps {
-  onNavigate: (view: 'home' | 'products' | 'about' | 'cart' | 'favorites' | 'contact') => void;
   favorites: Product[];
   toggleFavorite: (product: Product) => void;
   addToCart: (product: Product) => void;
 }
 
-const FavoritesPage: React.FC<FavoritesPageProps> = ({ onNavigate, favorites, toggleFavorite, addToCart }) => {
+const FavoritesPage: React.FC<FavoritesPageProps> = ({ favorites, toggleFavorite, addToCart }) => {
 
 
   return (

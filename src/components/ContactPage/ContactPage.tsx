@@ -2,10 +2,9 @@ import React from 'react';
 import './ContactPage.css';
 
 interface ContactPageProps {
-  onNavigate: (view: 'home' | 'products' | 'about' | 'cart' | 'favorites' | 'contact') => void;
 }
 
-const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
+const ContactPage: React.FC<ContactPageProps> = () => {
 
 
 

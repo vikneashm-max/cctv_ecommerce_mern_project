@@ -23,9 +23,9 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             Protect your home and business with our cutting-edge surveillance technology.
           </p>
           <div className="hero-btns">
-            <button className="btn-primary">Configure System</button>
-            <button className="btn-outline">
-              View Documentation 
+            <button className="btn-primary" onClick={() => onNavigate('products')}>View Our Products</button>
+            <button className="btn-outline" onClick={() => onNavigate('about')}>
+              About Us
               <svg viewBox="0 0 24 24" width="16" fill="none" stroke="currentColor" strokeWidth="2" style={{marginLeft: '8px'}}><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </button>
           </div>

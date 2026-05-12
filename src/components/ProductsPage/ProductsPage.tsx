@@ -15,14 +15,13 @@ interface Product {
 }
 
 interface ProductsPageProps {
-  onNavigate: (view: 'home' | 'products' | 'about' | 'cart' | 'favorites' | 'contact') => void;
   addToCart: (product: Product) => void;
   toggleFavorite: (product: Product) => void;
   buyNow: (product: Product) => void;
   favorites: Product[];
 }
 
-const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigate, addToCart, toggleFavorite, buyNow, favorites }) => {
+const ProductsPage: React.FC<ProductsPageProps> = ({ addToCart, toggleFavorite, buyNow, favorites }) => {
 
 
   const [selectedCategory, setSelectedCategory] = React.useState('All Categories');

@@ -210,6 +210,13 @@
   width: 100%;
   height: auto;
   border-radius: 12px;
+  animation: floatMain 6s ease-in-out infinite;
+}
+
+@keyframes floatMain {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
 }
 
 .performance-card {
@@ -221,6 +228,14 @@
   border-radius: 12px;
   border: 1px solid var(--border-light);
   max-width: 240px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  animation: floatCard 5s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 
 .perf-dot {

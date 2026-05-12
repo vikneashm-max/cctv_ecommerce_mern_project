@@ -11,12 +11,11 @@ interface Product {
 }
 
 interface CartPageProps {
-  onNavigate: (view: 'home' | 'products' | 'about' | 'cart' | 'favorites' | 'contact') => void;
   cartItems: Product[];
   removeFromCart: (id: number) => void;
 }
 
-const CartPage: React.FC<CartPageProps> = ({ onNavigate, cartItems, removeFromCart }) => {
+const CartPage: React.FC<CartPageProps> = ({ cartItems, removeFromCart }) => {
 
 
   return (

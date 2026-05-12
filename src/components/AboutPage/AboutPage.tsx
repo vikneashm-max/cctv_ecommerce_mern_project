@@ -114,7 +114,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           </div>
           <div className="cta-banner-btns">
             <button className="btn-blue" onClick={() => onNavigate('products')}>Explore Products</button>
-            <button className="btn-white">Contact Us</button>
+            <button className="btn-white" onClick={() => onNavigate('contact')}>Contact Us</button>
           </div>
         </div>
       </section>
