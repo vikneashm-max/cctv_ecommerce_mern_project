@@ -89,10 +89,28 @@
   font-weight: 500;
   font-size: 0.875rem;
   transition: color 0.2s;
+  position: relative;
+  padding: 0.5rem 0;
 }
 
 .nav-links a.active, .nav-links a:hover {
   color: var(--primary-orange);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-orange);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
 }
 
 .nav-right {
